@@ -28,6 +28,15 @@ router.get('/signup', function(req, res, next) {
   res.render('signUp');
 });
 
+router.get('/finder', function(req, res, next) {
+  res.render('map');
+});
+
+router.get('/feedback', function(req, res, next) {
+  res.render('feedback');
+});
+
+
 router.post('/register', function(req,res){
   var userdata = new userModel({
     username: req.body.username,
@@ -63,7 +72,6 @@ function isLoggedIn(req, res, next){
   }
   res.redirect('/signin');
 }
-
 
 
 

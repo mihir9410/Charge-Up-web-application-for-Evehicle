@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.find{
+    width: 70%;
+    height: 50%;
+    background-color: rgb(149, 255, 149);
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px 0;
+}
+
+.text_cont{
+    text-align: center;
+    line-height: 60px;
+}
+
+
+
+#map {
+    height: 600px;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+/* .pf{
+    padding: px;
+}*/
+
+#addressForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} 
+
+#addressForm button{
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 7px;
+    width: 7em;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: #25db3e;
+    border: none;
+}
+
+#addressForm label{
+    font-size: 22px;
+}
+#addressForm input{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    width: 25em;
+    margin: auto;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Nearby Charging Stations</title>
+    <link rel="stylesheet" href="/stylesheets/map.css">
+</head>
+
+<body>
+    <div class="find">
+        <div class="text_cont">
+            <h1 class="pf">Find Nearby Charging Stations</h1>
+            <form id="addressForm">
+                <!-- <label for="addressInput">Enter Address:</label> -->
+                <input type="text" id="addressInput" placeholder="Enter address...">
+                <button type="submit">Find Place</button>
+            </form>
+        </div>
+        <div id="map"></div>
+    </div>
+
+
+    <script src="/javascripts/map.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAy2pnj4rOW83bSdVM5D7wS5rwv8ikrDo&libraries=places&callback=initMap"
+        async defer></script>
+</body>
+
+</html>
