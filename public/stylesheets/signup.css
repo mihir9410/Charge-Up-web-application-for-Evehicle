@@ -65,10 +65,14 @@ body {
     font-size: 12px;
 }
 
+.login-box a{
+    float: right;
+}
+
 .sub {
     position: relative;
     display: inline-block;
-    border-radius: 20px;
+    border-radius: 5px;
     border: none;
     padding: 10px 20px;
     color: #67ee86;
@@ -78,12 +82,13 @@ body {
     overflow: hidden;
     transition: .5s;
     margin-top: 40px;
-    letter-spacing: 4px
+    letter-spacing: 4px;
+    background-color: transparent;
 }
 
 .sub:hover {
     background: #7fff5f;
-    border-radius: 20px;
+    border-radius: 5px;
     border: none;
     color: #fff;
     box-shadow: 0 0 5px #67ee86,
@@ -95,4 +100,14 @@ body {
 .sub span {
     position: absolute;
     display: block;
+}
+
+a:link{
+    color: #fff;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color: #31ff31;
 }

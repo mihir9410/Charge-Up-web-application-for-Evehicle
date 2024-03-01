@@ -36,6 +36,9 @@ router.get('/feedback', function(req, res, next) {
   res.render('feedback');
 });
 
+router.get('/emergency', function(req, res, next) {
+  res.render('emergency');
+});
 
 router.post('/register', function(req,res){
   var userdata = new userModel({

@@ -65,7 +65,11 @@ body {
     font-size: 12px;
 }
 
-.login-box form a {
+.login-box a{
+    float: right;
+}
+
+.login-box form .sub {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -76,10 +80,13 @@ body {
     overflow: hidden;
     transition: .5s;
     margin-top: 40px;
-    letter-spacing: 4px
+    letter-spacing: 4px;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
 }
 
-.login-box a:hover {
+.login-box .sub:hover {
     background: #65ff54;
     color: #fff;
     border-radius: 5px;
@@ -89,7 +96,7 @@ body {
         0 0 100px #67ee86;
 }
 
-.login-box a span {
+.login-box .sub span {
     position: absolute;
     display: block;
 }
@@ -123,4 +130,14 @@ body {
     color: white;
     margin: 20px;
     text-align: justify;
+}
+
+a:link{
+    color: #fff;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color: #31ff31;
 }

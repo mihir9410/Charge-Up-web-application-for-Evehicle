@@ -47,8 +47,8 @@
         <h1>Connect with Electric Vehicle Charging Stations</h1>
         <p>Find nearby charging stations and book your slot online</p>
         <div class="lm">
-          <button>Explore Charging Stations</button>
-          <h3>Learn More</h3>
+          <button onclick="maps()">Explore Charging Stations</button>
+          <a href="https://en.wikipedia.org/wiki/Charging_station"><h3>Learn More</h3></a>
         </div>
       </div>
       <!-- <img  class="first" src="https://www.thedrive.com/content/2018/12/DB2018AL02326_large.jpg?quality=85&width=1920&quality=70" alt=""> -->
@@ -99,11 +99,15 @@
         <div class="grid-item">
           <i class="fa-solid fa-plug-circle-exclamation"></i>
           <div>
-            <h3><b>Emergency services</b></h3>
-            <p>
-              Access Emergency services connecting users and charging station
-              for assistance
-            </p>
+            <a href="/emergency">
+              <h3>
+                <b>Emergency services</b>
+              </h3>
+              <p>
+                Access Emergency services connecting users and charging station
+                for assistance
+              </p>
+            </a>
           </div>
         </div>
       </div>
@@ -228,5 +232,6 @@
         <i class="fa-brands fa-instagram"></i>
       </div>
     </footer>
+    <script src="/javascripts/index.js"></script>
   </body>
 </html>

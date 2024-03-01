@@ -325,6 +325,8 @@ main {
 	z-index: 5;
 }
 
+.grid-item a {color: #000;}
+
 .grid-item h3 {
 	font-size: 1.3vmax;
 }

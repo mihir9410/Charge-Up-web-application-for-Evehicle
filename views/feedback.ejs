@@ -5,134 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        html {
-            height: 100%;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-            background: linear-gradient(#82fc92, #153021);
-        }
-
-        .login-box {
-            position: absolute;
-            top: 50%;
-            left: 63%;
-            height: 500px;
-            width: 650px;
-            padding: 40px;
-            transform: translate(-50%, -50%);
-            background: rgba(0, 0, 0, .5);
-            box-sizing: border-box;
-            box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
-            border-radius: 10px;
-        }
-
-        .login-box h2 {
-            margin: 0 0 30px;
-            padding: 0;
-            color: #fff;
-            text-align: center;
-        }
-
-        .login-box .user-box {
-            position: relative;
-        }
-
-        .login-box .user-box input {
-            width: 100%;
-            padding: 10px 0;
-            font-size: 16px;
-            color: #fff;
-            margin-bottom: 30px;
-            border: none;
-            border-bottom: 1px solid #fff;
-            outline: none;
-            background: transparent;
-        }
-
-        .login-box .user-box label {
-            position: absolute;
-            top: 0;
-            left: 0;
-            padding: 10px 0;
-            font-size: 16px;
-            color: #fff;
-            pointer-events: none;
-            transition: .5s;
-        }
-
-        .login-box .user-box input:focus~label,
-        .login-box .user-box input:valid~label {
-            top: -20px;
-            left: 0;
-            color: #64f781;
-            font-size: 12px;
-        }
-
-        .login-box form a {
-            position: relative;
-            display: inline-block;
-            padding: 10px 20px;
-            color: #67ee86;
-            font-size: 16px;
-            text-decoration: none;
-            text-transform: uppercase;
-            overflow: hidden;
-            transition: .5s;
-            margin-top: 40px;
-            letter-spacing: 4px
-        }
-
-        .login-box a:hover {
-            background: #65ff54;
-            color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 5px #67ee86,
-                0 0 25px #67ee86,
-                0 0 50px #67ee86,
-                0 0 100px #67ee86;
-        }
-
-        .login-box a span {
-            position: absolute;
-            display: block;
-        }
-
-        .text{
-            position: absolute;
-            top: 50%;
-            left: 27%;
-            height: 500px;
-            width: 400px;
-            padding: 40px;
-            transform: translate(-50%, -50%);
-            background: rgba(0, 0, 0, .5);
-            box-sizing: border-box;
-            box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
-            border-radius: 10px;
-            
-        }
-        /* .container h2{
-            color: white;
-            margin-top: 8px;
-        } */
-        .text h2{
-            margin-left: auto;
-            margin-right: auto;
-            color: white;
-            text-align: center;
-        }
-        .text p{
-            font-size: medium;
-            color: white;
-            margin: 20px;
-            text-align: justify;
-        }
-    </style>
+    <link rel="stylesheet" href="/stylesheets/feedback.css">
 </head>
 
 <body>
@@ -143,7 +16,17 @@
             <p>Whether you have a suggestion for improvement, encountered an issue, or simply want to let us know about your experience, we're here to listen. Your insights help us continually enhance your online experience.</p>
             <p>Please fill out the form below to share your feedback with us. We appreciate your input and look forward to hearing from you!</p>
         </div>
-        <div class="login-box">
+        <div class="login-box"><a href="/"><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            class="bi bi-house"
+            viewBox="0 0 16 16" >
+            <path
+              d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"
+            />
+          </svg></a>
             <h2>Feedback</h2>
             <form>
                 <div class="user-box">
@@ -158,13 +41,7 @@
                     <input type="text" name="Feedback" required>
                     <label>Your valuable feedback</label>
                 </div>
-                <a href="#">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Submit
-                </a>
+                <button type="submit" class="sub">Submit</button>
             </form>
         </div>
     </div>
