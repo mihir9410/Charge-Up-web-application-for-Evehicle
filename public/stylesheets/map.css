@@ -8,12 +8,13 @@ body{
     height: 100%;
     width: 100%;
     font-family: Arial, sans-serif;
+    background-color: rgb(149, 255, 149);;
 }
 
 .find{
     width: 70%;
     height: 50%;
-    background-color: rgb(149, 255, 149);
+    background-color: rgb(224, 225, 224);
     margin: auto;
     border-radius: 20px;
     padding: 20px 0;
@@ -24,7 +25,9 @@ body{
     line-height: 60px;
 }
 
-
+.text_cont a{
+    float: right;
+}
 
 #map {
     height: 600px;
@@ -63,4 +66,14 @@ body{
     border-radius: 7px;
     width: 25em;
     margin: auto;
+}
+
+a:link{
+    color: #fff;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color: #31ff31;
 }

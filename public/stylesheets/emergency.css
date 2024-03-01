@@ -1,43 +1,40 @@
 html {
     height: 100%;
-  }
+}
 
-  body {
+body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     background: linear-gradient(#82fc92, #153021);
-  }
+}
 
-  .login-box {
+.login-box {
     position: absolute;
     top: 50%;
-    left: 50%;
-    width: 400px;
+    left: 63%;
+    height: 600px;
+    width: 650px;
     padding: 40px;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, .5);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
     border-radius: 10px;
-  }
+}
 
-  .login-box h2 {
+.login-box h2 {
     margin: 0 0 30px;
     padding: 0;
     color: #fff;
     text-align: center;
-  }
+}
 
-  .login-box a{
-    float: right;
-  }
-
-  .login-box .user-box {
+.login-box .user-box {
     position: relative;
-  }
+}
 
-  .login-box .user-box input {
+.login-box .user-box input {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
@@ -47,9 +44,9 @@ html {
     border-bottom: 1px solid #fff;
     outline: none;
     background: transparent;
-  }
+}
 
-  .login-box .user-box label {
+.login-box .user-box label {
     position: absolute;
     top: 0;
     left: 0;
@@ -58,21 +55,23 @@ html {
     color: #fff;
     pointer-events: none;
     transition: .5s;
-  }
+}
 
-  .login-box .user-box input:focus~label,
-  .login-box .user-box input:valid~label {
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
     top: -20px;
     left: 0;
     color: #64f781;
     font-size: 12px;
-  }
+}
 
-.sub {
+.login-box a{
+    float: right;
+}
+
+.login-box form .sub {
     position: relative;
     display: inline-block;
-    border-radius: 5px;
-    border: none;
     padding: 10px 20px;
     color: #67ee86;
     font-size: 16px;
@@ -82,26 +81,53 @@ html {
     transition: .5s;
     margin-top: 40px;
     letter-spacing: 4px;
-    background-color: transparent;
-  }
-
-.sub:hover {
-    background: #65ff54;
-    color: #fff;
     border: none;
     border-radius: 5px;
-    box-shadow: 0 0 5px #67ee86,
-      0 0 25px #67ee86,
-      0 0 50px #67ee86,
-      0 0 100px #67ee86;
-  }
+    background-color: transparent;
+}
 
-.sub span {
+.login-box .sub:hover {
+    background: #65ff54;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #67ee86,
+        0 0 25px #67ee86,
+        0 0 50px #67ee86,
+        0 0 100px #67ee86;
+}
+
+.login-box .sub span {
     position: absolute;
     display: block;
-  }
+}
 
-  a:link{
+.text {
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    height: 600px;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+
+}
+
+/* .container h2{
+    color: white;
+    margin-top: 8px;
+} */
+.text p {
+    font-size: 16px;
+    color: white;
+    margin: auto;
+    text-align: justify;
+}
+
+a:link{
     color: #fff;
 }
 a:visited{
@@ -109,4 +135,7 @@ a:visited{
 }
 a:hover{
     color: #31ff31;
+}
+.login-box a svg {
+margin-right: 20px; /* Adjust the margin as needed */
 }
