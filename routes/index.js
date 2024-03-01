@@ -7,12 +7,14 @@ passport.use(new localStrategy(userModel.authenticate()));
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'CODENINJAS' });
+  res.render('index', {User: 'User'});
 });
 
-router.get('/demo',function(req, res, next) {
-  res.render('demo');
+
+router.get('/use', function(req, res, next) {
+  res.render('index', {User: req.flash('name')});
 });
+
 
 router.get('/signin', function(req, res, next) {
   res.render('login');
@@ -42,9 +44,11 @@ router.post('/register', function(req,res){
 });
 
 router.post('/login', passport.authenticate('local',{
-  successRedirect: '/profile',
-  failureRedirect: '/demo'
-}), function(req,res){})
+  successRedirect: '/use',
+  failureRedirect: '/'
+}), function(req,res){
+  req.flash('name',req.body.username);
+})
 
 router.get('/logout',function(req, res, next){
   req.logout(function(err){
