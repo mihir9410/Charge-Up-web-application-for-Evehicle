@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recommended Charging Stations</title>
+</head>
+<body>
+  <h1>Recommended Charging Stations</h1>
+
+  {% if recommended_stations %}
+    <ul>
+      {% for station in recommended_stations %}
+        <li>
+          Station: {{ station[0] }} - Charging time: {{ '%.2f' % float(station[1]) }} hours, Distance: {{ station[2] }} km
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No charging stations found matching your preferences.</p>
+  {% endif %}
+</body>
+</html>

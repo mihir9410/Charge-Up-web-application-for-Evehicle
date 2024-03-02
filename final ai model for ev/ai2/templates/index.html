@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charging Station Recommender</title>
+</head>
+<body>
+  <h1>Charging Station Recommender</h1>
+  <form method="post">
+    <label for="connector_types">Connector Types:</label>
+    <input type="text" id="connector_types" name="connector_types" required><br><br>
+
+    <label for="charging_speed">Charging Speed:</label>
+    <input type="text" id="charging_speed" name="charging_speed" required><br><br>
+
+    <label for="amenities">Amenities:</label>
+    <input type="text" id="amenities" name="amenities" required><br><br>
+
+    <label for="battery_level">Battery Level (%):</label>
+    <input type="number" id="battery_level" name="battery_level" required min="0" max="100"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
