@@ -1,9 +1,8 @@
 const mongoose = require('mongoose');
-const pln = require('passport-local-mongoose');
 
 mongoose.connect("mongodb://127.0.0.1:27017/UserDB")
 .then(()=>{
-  console.log('userDB connected')
+  console.log('feedbackDB connected')
 })
 .catch(()=>{
   console.log('failed')
@@ -11,12 +10,10 @@ mongoose.connect("mongodb://127.0.0.1:27017/UserDB")
 
 const userSchema = new mongoose.Schema({
   username: String,
-  password: String,
   email: String,
-  secret: String
+  massege: String
 });
 
-userSchema.plugin(pln);
-const User = mongoose.model('User', userSchema);
+const User = mongoose.model('Feedback', userSchema);
 
 module.exports = User;

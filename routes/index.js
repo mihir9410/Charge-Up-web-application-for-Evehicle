@@ -4,6 +4,7 @@ const userModel = require('./users');
 const passport = require('passport');
 const localStrategy = require('passport-local');
 passport.use(new localStrategy(userModel.authenticate()));
+const feedback = require('./feedback');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -67,6 +68,16 @@ router.get('/logout',function(req, res, next){
     if(err){ return next(err); }
     res.redirect('/signin')
   })
+})
+
+router.post('/feed',async function(req,res){
+  await feedback.create({
+    username: req.body.Username,
+    email: req.body.email,
+    massege: req.body.feedback
+    
+  })
+  res.redirect('/');
 })
 
 function isLoggedIn(req, res, next){
