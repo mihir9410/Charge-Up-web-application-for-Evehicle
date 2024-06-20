@@ -1,1 +1,2 @@
-Final model is model for our solution the rest is node js code for the website
+final model is the model for the charging system.
+And the remaining are the node js webapplication
